@@ -1,4 +1,54 @@
-.App {
-  text-align: center;
+*{
+  background-color:brown;
 }
- 
+.nav-bar {
+  display: flex;
+  border-style: solid;
+  background-color:rgb(223, 175, 175);
+}
+.nav-bar * {
+  background-color:rgb(223, 175, 175);
+}
+
+.img {
+  width: 50%;
+  margin: 1%; /*Margin between the title div and the nav-bar div*/
+  border-style: solid;
+  overflow: hidden;
+}
+.nav-items{
+  width: 42%;
+  margin-bottom: 0%;
+  border-style: solid;
+  align-self: flex-end;
+  margin-left: auto;
+  align-items: flex-end;
+}
+
+.item {
+  font-size: large;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-style: solid;
+  float: right; /*Keeps the items inline*/
+  padding-right: 10%; /*Spacing between the items*/
+}
+
+.item h3 a {
+  /* Same as before */
+  color: royalblue;
+  overflow: hidden;
+  background: linear-gradient(to right, royalblue, royalblue 50%, rgb(0, 0, 0) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+
+}
+.item h3 a:hover {
+  background-position: 0 100%;
+}
+
